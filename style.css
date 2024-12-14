@@ -1,0 +1,46 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+@keyframes animationLazizbekovich {
+    0% {  
+        transform: translate(0, 0); /* Начальная позиция */ 
+        background-color: greenyellow; 
+    }  
+    25% {  
+        transform: translate(200px, 0); /* Вправо */ 
+        background-color: lime; 
+    }  
+    50% {  
+        transform: translate(200px, 200px); /* Вправо и вниз */ 
+        background-color: blue; 
+    }  
+    75% {  
+        transform: translate(0, 200px); /* Влево */  
+        background-color: violet;
+    }  
+    100% {  
+        transform: translate(0, 0); /* Вверх (возвращение в начальную позицию) */ 
+        background-color: darksalmon; 
+    }
+}
+
+.box{
+    width: 200px;
+    height: 200px;
+    position: relative;
+    background-color: aquamarine;
+    /* animation-name: animationLazizbekovich; */
+    /* animation-duration: 4s; */
+    /* animation-delay: 3s; */
+    /* animation-timing-function: ease-in; */
+    /* animation-timing-function: ease-in-out; */
+    /* animation-timing-function: cubic-bezier(1, 0.0082, 0.165, 1); */
+    /* animation-timing-function: steps(50, start); */
+    /* animation-iteration-count: infinite; */
+    /* animation-direction: alternate; */
+    animation: animationLazizbekovich 4s ease-in-out 0s infinite alternate;
+}
